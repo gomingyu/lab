@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>美丽校园—春华</title>
+    <<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>美丽校园—春华</title>
+    <style>
+        /* 图片容器样式：220x220，左外边距50px，横排 */
+        .img-container {
+            width: 220px;
+            height: 220px;
+            margin-left: 50px;
+            margin-top: 20px;
+            float: left;
+            margin-right: 30px;
+        }
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        /* 清除浮动，避免布局错乱 */
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* 锚点导航样式（竖向罗列+调整行间距/字体/颜色） */
+        .nav {
+            margin: 20px 0;
+            padding-left: 50px;
+        }
+        .nav a {
+            display: block;
+            margin-bottom: 8px; /* 行间距调小（原15px→8px） */
+            font-size: 16px; /* 字体调小（原18px→16px） */
+            text-decoration: none;
+            color: #1e90ff; /* 改为蓝色（经典天蓝色，醒目且美观） */
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #0066cc; /* 鼠标悬浮时稍深的蓝色，保持风格统一 */
+            text-decoration: underline;
+        }
+        /* 正文样式优化 */
+        p {
+            text-indent: 2em;
+            line-height: 1.8;
+            font-size: 16px;
+            margin: 15px 50px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h3 {
+            margin-left: 50px;
+            color: #34495e;
+        }
+        ul {
+            margin-left: 70px;
+            line-height: 2;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 一级标题：页面主题 -->
+    <h1>美丽校园—春华</h1>
+    <!-- 二级标题：作者信息 -->
+    <h2>作者：高铭宇</h2>
+    <!-- 水平线分割 -->
+    <hr>
+
+    <!-- 锚点导航 -->
+    <div class="nav">
+        <a href="#nature">自然风光</a>
+        <a href="#culture">人文景观</a>
+    </div>
+
+    <!-- 三级标题：自然风光（锚点id） -->
+    <h3 id="nature">自然风光</h3>
+    <!-- 均衡后的第一段 -->
+    <p>
+        当第一缕春风拂过校园的树梢，整个世界便被染上了鲜活的春意。清晨的薄雾还未完全散去，阳光透过嫩绿的梧桐叶缝隙，在地面洒下斑驳的光影，像是大自然亲手绘制的油画。主干道两旁的樱花树是校园里最亮眼的风景，粉白的花瓣层层叠叠，风一吹，便有无数片花瓣打着旋儿飘落，铺成一条粉色的长廊，踩上去软乎乎的，像是春天在耳边轻声絮语。湖边的垂柳抽出了新芽，枝条变得柔软而轻盈，柳叶泛着淡淡的嫩绿，倒映在澄澈的湖水中，让整个湖面都变得灵动起来。偶尔有几只燕子掠过水面，激起一圈圈涟漪，打破了湖面的宁静，却又为这春日增添了几分生机。午后的阳光最是惬意，坐在湖边的长椅上，晒着暖洋洋的太阳，看着远处的教学楼在春光里静静伫立，耳边是风吹树叶的声音，鼻尖是桃花淡淡的甜香，所有的疲惫都在这一刻烟消云散。
+    </p>
+    <!-- 均衡后的第二段 -->
+    <p>
+        校园里的每一处角落都藏着春天的惊喜，操场边的迎春花开得灿烂，像是一串串金色的小铃铛，为清新的春日添了几分活泼；图书馆前的玉兰开得正盛，白的、紫的，在春风中傲然挺立，散发着清雅的香气；就连路边的小草，也从泥土里探出嫩绿的脑袋，在风中轻轻摇曳，诉说着春日的故事。漫步在校园里，每一步都像是踩在诗行里，每一眼都是一幅绝美的春景图，让人忍不住沉醉其中，不愿离去。春日的校园，是一首流动的诗，是一幅立体的画，用温柔的春风、澄澈的蓝天、温暖的阳光，治愈着每一个在这里求学的学子。
+    </p>
+
+    <!-- 三级标题：人文景观（锚点id） -->
+    <h3 id="culture">人文景观</h3>
+    <!-- 无序列表 -->
+    <ul>
+        <li>图书馆：校园的知识殿堂，承载着无数学子的梦想与追求</li>
+        <li>校训石：镌刻着学校的精神内核，是校园文化的象征</li>
+        <li>体育馆：充满青春活力的场所，见证着学子们的拼搏与汗水</li>
+        <li>校史馆：记录着学校的发展历程，传承着学校的历史与文化</li>
+    </ul>
+
+    <!-- 图片容器：220x220，左留白50px，3张图横排 -->
+    <div class="clearfix">
+        <div class="img-container">
+            <img src="p1.jpg" alt="校园春景1">
+        </div>
+        <div class="img-container">
+            <img src="p2.jpg" alt="校园春景2">
+        </div>
+        <div class="img-container">
+            <img src="p3.jpg" alt="校园春景3">
+        </div>
+    </div>
+</body>
+</html>
